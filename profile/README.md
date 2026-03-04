@@ -4,7 +4,7 @@
 
 🏆 **Built for the [Chainlink Convergence Hackathon](https://chain.link/hackathon)** — DeFi & Tokenization Track
 
-[➡️ Live Demo](https://phoenix-protocol.xyz/)
+[➡️ Live Demo](https://phoenix-protocol-fi.vercel.app/)
 
 ---
 
@@ -20,7 +20,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FF6B35&center=true&vCenter=true&width=700&lines=🏛️+TradFi+structured+products+on-chain;🔗+Automated+by+Chainlink+CRE;🔥+Missed+coupons+remembered+%26+paid+back;💰+Idle+capital+earns+yield+on+Aave" alt="Typing SVG" />
 </p>
 
-[➡️ Explore Vaults](https://phoenix-protocol.xyz/app)
+[➡️ Explore Vaults](https://phoenix-protocol-fi.vercel.app/app)
 
 ---
 
@@ -67,7 +67,7 @@
   <p>Connect your wallet on Arbitrum Sepolia, deposit USDC into a vault, and watch the automated observation lifecycle unfold.</p>
 </details>
 
-➡️ [See More FAQs](https://phoenix-protocol.xyz/faq)
+➡️ [See More FAQs](https://phoenix-protocol-fi.vercel.app/faq)
 
 ---
 
@@ -98,7 +98,7 @@ Built as part of the [**Chainlink Convergence Hackathon**](https://chain.link/ha
 </p>
 
 <p align="center">
-  <a href="https://phoenix-protocol.xyz"><strong>Phoenix Protocol</strong></a> is proudly built on <a href="https://arbitrum.io"><strong>Arbitrum</strong></a>, powered by <a href="https://chain.link"><strong>Chainlink CRE</strong></a>.
+  <a href="https://phoenix-protocol-fi.vercel.app"><strong>Phoenix Protocol</strong></a> is proudly built on <a href="https://arbitrum.io"><strong>Arbitrum</strong></a>, powered by <a href="https://chain.link"><strong>Chainlink CRE</strong></a>.
 </p>
 
 <p align="center">
