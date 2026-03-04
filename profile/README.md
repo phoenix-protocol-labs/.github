@@ -12,6 +12,8 @@
 
 **Phoenix** is a decentralized protocol bringing **autocall structured products** on-chain — a multi-trillion dollar TradFi market, now accessible to everyone. Powered by **Chainlink CRE** for fully automated settlement and the **Phoenix Memory Coupon** that remembers missed coupons and pays them back.
 
+https://github.com/user-attachments/assets/589381ea-716c-4425-83d4-dac5af27ee98
+
 ---
 
 ## 💥 Start Earning Structured Yield
