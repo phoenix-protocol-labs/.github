@@ -2,6 +2,8 @@
 
 > **Institutional-Grade. Trustless. Automated. Welcome to the future of structured products on [Arbitrum](https://arbitrum.io), powered by [Chainlink CRE](https://chain.link).**
 
+🏆 **Built for the [Chainlink Convergence Hackathon](https://chain.link/hackathon)** — CRE Track
+
 [➡️ Live Demo](https://phoenix-protocol.xyz/)
 
 ---
@@ -73,6 +75,8 @@
 
 Phoenix is proudly **powered by Chainlink CRE** — the Compute Runtime Environment that automates price observation, barrier evaluation, and on-chain settlement across **13 vaults** and **5 data sources**.
 
+Built as part of the [**Chainlink Convergence Hackathon**](https://chain.link/hackathon) — CRE Track.
+
 [🔍 Learn more about Chainlink CRE](https://chain.link)
 
 ---
@@ -106,7 +110,9 @@ Phoenix is proudly **powered by Chainlink CRE** — the Compute Runtime Environm
 > _"Phoenix doesn't just bring structured products on-chain — it makes them automated, transparent, and accessible to everyone."_ 🔥
 
 <p align="center">
-  <img src="https://img.shields.io/badge/structured_products-on--chain-orange?style=for-the-badge" />
-  <img src="https://raw.githubusercontent.com/phoenix-protocol-labs/.github/main/profile/assets/chainlink_build_blue.png" alt="Built with Chainlink" height="45" />
-  <img src="https://img.shields.io/badge/13_vaults-live-blue?style=for-the-badge" />
+  <a href="https://chain.link/hackathon"><img src="https://img.shields.io/badge/Chainlink-Convergence_Hackathon-375BD2?style=for-the-badge&logo=chainlink&logoColor=white" alt="Chainlink Convergence Hackathon" /></a>
+  <img src="https://img.shields.io/badge/CRE-Track-375BD2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/structured_products-on--chain-FF6B35?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/13_vaults-live-29AF7F?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/47_tests-passing-29AF7F?style=for-the-badge" />
 </p>
