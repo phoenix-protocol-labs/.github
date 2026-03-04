@@ -2,15 +2,13 @@
 
 > **Institutional-Grade. Trustless. Automated. Welcome to the future of structured products on [Arbitrum](https://arbitrum.io), powered by [Chainlink CRE](https://chain.link).**
 
-[➡️ Live Demo](https://phoenix-protocol.xyz/) · [📄 Documentation](https://phoenix-protocol.xyz/docs)
+[➡️ Live Demo](https://phoenix-protocol.xyz/)
 
 ---
 
 ## ✨ What is Phoenix?
 
-**Phoenix** is an on-chain protocol that brings **autocall structured products** — a multi-trillion dollar TradFi market — to DeFi. Deposit USDC, pick your barriers, and let **Chainlink CRE** handle the rest: price observation, barrier evaluation, and settlement, all **fully automated** with zero manual intervention.
-
-The secret weapon? The **Phoenix Memory Coupon** — missed coupons aren't lost, they're *remembered* and paid retroactively.
+**Phoenix** is a decentralized protocol bringing **autocall structured products** on-chain — a multi-trillion dollar TradFi market, now accessible to everyone. Powered by **Chainlink CRE** for fully automated settlement and the **Phoenix Memory Coupon** that remembers missed coupons and pays them back.
 
 ---
 
@@ -28,46 +26,13 @@ The secret weapon? The **Phoenix Memory Coupon** — missed coupons aren't lost,
 
 | 🏛️ Institutional Mechanics | 🔗 Fully Automated | 🔥 Phoenix Memory |
 |---------------------------|--------------------|--------------------|
-| Real autocall products with configurable **barriers**, **coupon rates**, and **observation schedules** — the same products banks sell to institutions. | **Chainlink CRE** handles everything: cron-triggered observations, DON-consensus pricing from **5 data sources**, and on-chain settlement. Zero keepers. | Missed coupons are **never lost** — they accumulate and get paid retroactively on the next favorable observation. |
-
-| 💰 Aave Yield on Deposits | 📊 5 Data Sources | 🏭 Factory Pattern |
-|--------------------------|-------------------|--------------------|
-| All USDC deposits are auto-supplied to **Aave V3**. Your capital earns yield while locked, on top of structured product coupons. | Pendle, Hyperliquid, xStocks, Aave rates, DeFi Llama — **13 vaults** across crypto and **real-world stocks**. | Create custom vaults with your own barriers, coupon rates, and maturity via the **AutocallFactory**. |
+| Real autocall products with configurable **barriers**, **coupon rates**, and **schedules** — same products banks sell to institutions. | **Chainlink CRE** runs the full pipeline: cron observation, DON-consensus pricing, on-chain settlement. No keepers. | Missed coupons are **never lost** — they accumulate and get paid retroactively on the next favorable observation. |
 
 ---
 
-## 🧠 How It Works
+## 🔥 Phoenix Memory Coupon
 
-```
-📅 CRE Cron fires
-        │
-   Fetch price (DON consensus median)
-        │
-        ▼
-  price ≥ 100% (autocall barrier)?
-   ┌────┴────┐
-   │ YES     │ NO
-   ▼         ▼
- AUTOCALL   price ≥ 70% (coupon barrier)?
- Capital +   ┌────┴────┐
- all coupons │ YES     │ NO
- returned    ▼         ▼
-         PAY_COUPON  price ≥ 60% (knock-in)?
-         + memory     ┌────┴────┐
-         coupons     │ YES     │ NO
-                     ▼         ▼
-                  CONTINUE   KNOCK_IN
-                  (missed,   (capital loss,
-                   remembered) memory forfeited)
-```
-
----
-
-## 🔥 Phoenix Memory Coupon — The Innovation
-
-> *"What if missed coupons could come back?"*
-
-When a coupon is missed because the price dips between the knock-in and coupon barriers, Phoenix **remembers** it. On the next favorable observation, all accumulated missed coupons are **paid retroactively**.
+> *Missed a coupon? Phoenix remembers.*
 
 | Period | Price | Action | Memory | Payout |
 |:------:|:-----:|--------|:------:|--------|
@@ -78,97 +43,54 @@ When a coupon is missed because the price dips between the knock-in and coupon b
 
 ---
 
-## 📦 Vault Catalog — 13 Live Vaults
-
-| Vault | Underlying | Source | Strike |
-|-------|-----------|--------|--------|
-| 🟢 Conservative YT | ETH | Pendle | $1.00 |
-| 🔴 Aggressive YT | ETH | Pendle | $1.00 |
-| 📊 6-Period Demo | ETH | Pendle | $1.00 |
-| 📈 ETH Perp | ETH | Hyperliquid | $3,800 |
-| 🍎 AAPL | AAPL | xStocks | $275 |
-| ⚡ TSLA | TSLA | xStocks | $415 |
-| 🟩 NVDA | NVDA | xStocks | $195 |
-| 📦 AMZN | AMZN | xStocks | $230 |
-| 🔍 GOOG | GOOG | xStocks | $185 |
-| 💧 WETH Rate | WETH | Aave | 2.5% APY |
-| 💵 USDC Rate | USDC | Aave | 4.0% APY |
-| 🔷 stETH | stETH | Lido / DeFi Llama | $3,800 |
-| 🔶 wstETH | wstETH | Lido / DeFi Llama | $4,500 |
-
----
-
 ## ❓ Frequently Asked Questions
 
 <details>
   <summary>🤔 What are structured products?</summary>
-  <p>Structured products are derivatives with conditional payoffs based on an underlying asset's performance. They are a <strong>multi-trillion dollar market</strong> in TradFi — think autocalls, reverse convertibles, and capital-protected notes.</p>
+  <p>Derivatives with conditional payoffs based on an underlying asset's performance. A <strong>multi-trillion dollar market</strong> in TradFi — autocalls, reverse convertibles, capital-protected notes.</p>
 </details>
 
 <details>
   <summary>🔥 What is the Phoenix Memory Coupon?</summary>
-  <p>When a coupon is missed (price between knock-in and coupon barriers), it's <strong>remembered, not lost</strong>. On the next favorable observation, all missed coupons are paid retroactively. A knock-in event forfeits them.</p>
+  <p>When a coupon is missed, it's <strong>remembered, not lost</strong>. On the next favorable observation, all missed coupons are paid retroactively.</p>
 </details>
 
 <details>
   <summary>💰 How do deposits earn yield?</summary>
-  <p>All USDC deposits are automatically supplied to <strong>Aave V3</strong>. Your capital earns the Aave supply rate while locked in the vault — on top of any structured product coupons.</p>
+  <p>All USDC deposits are auto-supplied to <strong>Aave V3</strong>. Your capital earns yield while locked — on top of structured product coupons.</p>
 </details>
 
 <details>
-  <summary>🔗 How does Chainlink CRE automate settlement?</summary>
-  <p>CRE runs a cron-triggered workflow across the Chainlink DON: it fetches prices from 5 external APIs, reaches <strong>consensus via median aggregation</strong>, evaluates barriers, and writes the settlement action on-chain via <code>IReceiver.onReport()</code>. Zero keepers, fully trustless.</p>
+  <summary>🚀 How do I start?</summary>
+  <p>Connect your wallet on Arbitrum Sepolia, deposit USDC into a vault, and watch the automated observation lifecycle unfold.</p>
 </details>
 
-<details>
-  <summary>🚀 How do I get started?</summary>
-  <p>Connect your wallet on Arbitrum Sepolia, mint test USDC, pick a vault, deposit, and watch the automated observation lifecycle unfold.</p>
-</details>
+➡️ [See More FAQs](https://phoenix-protocol.xyz/faq)
 
 ---
 
-## 🏗️ Architecture
+## 🔗 Built With Chainlink CRE
 
-```
-                     Frontend
-                (React + Vite + wagmi)
-                        │
-                        ▼
-        ┌───────────────────────────────┐
-        │        Smart Contracts        │
-        │  Factory + Vault + Settlement │
-        └───────────────────────────────┘
-             │                    │
-             ▼                    ▼
-       Chainlink CRE          Aave V3
-    (Cron + HTTP + EVM)    (yield on deposits)
-             │
-   ┌─────────┼─────────┬─────────┬─────────┐
-   │         │         │         │         │
- Pendle  Hyperliquid  xStocks   Aave   DeFi Llama
-(YT price) (perp mid) (stocks) (rates) (prices)
-```
+Phoenix is proudly **powered by Chainlink CRE** — the Compute Runtime Environment that automates price observation, barrier evaluation, and on-chain settlement across **13 vaults** and **5 data sources**.
+
+[🔍 Learn more about Chainlink CRE](https://chain.link)
 
 ---
 
 ## 🏗️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| 🔐 **Smart Contracts** | Solidity 0.8.24 · Foundry · OpenZeppelin v5 |
-| 🔗 **Oracle & Automation** | Chainlink CRE v1.0.9 · TypeScript → WASM |
-| ⚛️ **Frontend** | React 19 · Vite · Tailwind CSS 4 · wagmi v3 · viem v2 |
-| 💰 **Yield** | Aave V3 (automated supply/withdraw) |
-| ⛓️ **Network** | Arbitrum Sepolia (chainId 421614) |
-| 📊 **Data Sources** | Pendle · Hyperliquid · xStocks · DeFi Llama |
-| 🧪 **Testing** | Forge — **47 passing tests** |
+- 🔐 **Solidity Smart Contracts** (Foundry + OpenZeppelin)
+- 🔗 **Chainlink CRE** (TypeScript → WASM)
+- ⚛️ **React + Vite + wagmi**
+- 💰 **Aave V3 Yield Integration**
+- ⛓️ **Arbitrum Sepolia**
 
 ---
 
-## 🤝 Built With & Powered By
+## 🤝 Powered by & in Partnership With
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/phoenix-protocol-labs/.github/main/profile/assets/Phoenix.svg" alt="Phoenix Protocol" height="100" />
+  <img src="https://raw.githubusercontent.com/phoenix-protocol-labs/.github/main/profile/assets/phoenix-white.svg" alt="Phoenix Protocol" height="100" />
 </p>
 
 <p align="center">
@@ -177,17 +99,14 @@ When a coupon is missed because the price dips between the knock-in and coupon b
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/phoenix-protocol-labs/.github/main/profile/assets/Chainlink_Logo_White.svg" alt="Chainlink" height="30" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/phoenix-protocol-labs/.github/main/profile/assets/xstocks.svg" alt="xStocks" height="30" />
 </p>
 
 ---
 
-> _"Phoenix doesn't just bring structured products on-chain — it makes them **automated**, **transparent**, and **accessible** to everyone."_ 🔥
+> _"Phoenix doesn't just bring structured products on-chain — it makes them automated, transparent, and accessible to everyone."_ 🔥
 
 <p align="center">
   <img src="https://img.shields.io/badge/structured_products-on--chain-orange?style=for-the-badge" />
   <img src="https://raw.githubusercontent.com/phoenix-protocol-labs/.github/main/profile/assets/chainlink_build_blue.png" alt="Built with Chainlink" height="45" />
-  <img src="https://img.shields.io/badge/47_tests-passing-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/13_vaults-live-blue?style=for-the-badge" />
 </p>
