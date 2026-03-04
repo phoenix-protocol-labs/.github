@@ -1,6 +1,6 @@
 # 🔥 PHOENIX — On-Chain Structured Products, Fully Automated 🏛️
 
-> **Institutional-Grade. Trustless. Automated. Welcome to the future of structured products on [Arbitrum](https://arbitrum.io), powered by [Chainlink CRE](https://chain.link).**
+> **Institutional-Grade. Trustless. Automated. Welcome to the future of structured products on-chain, powered by [Chainlink CRE](https://chain.link).**
 
 🏆 **Built for the [Chainlink Convergence Hackathon](https://chain.link/hackathon)** — DeFi & Tokenization Track
 
@@ -64,7 +64,7 @@
 
 <details>
   <summary>🚀 How do I start?</summary>
-  <p>Connect your wallet on Arbitrum Sepolia, deposit USDC into a vault, and watch the automated observation lifecycle unfold.</p>
+  <p>Connect your wallet, deposit USDC into a vault, and watch the automated observation lifecycle unfold.</p>
 </details>
 
 ➡️ [See More FAQs](https://phoenix-protocol-fi.vercel.app/faq)
@@ -87,7 +87,7 @@ Built as part of the [**Chainlink Convergence Hackathon**](https://chain.link/ha
 - 🔗 **Chainlink CRE** (TypeScript → WASM)
 - ⚛️ **React + Vite + wagmi**
 - 💰 **Aave V3 Yield Integration**
-- ⛓️ **Arbitrum Sepolia**
+- ⛓️ **EVM Compatible**
 
 ---
 
@@ -98,7 +98,7 @@ Built as part of the [**Chainlink Convergence Hackathon**](https://chain.link/ha
 </p>
 
 <p align="center">
-  <a href="https://phoenix-protocol-fi.vercel.app"><strong>Phoenix Protocol</strong></a> is proudly built on <a href="https://arbitrum.io"><strong>Arbitrum</strong></a>, powered by <a href="https://chain.link"><strong>Chainlink CRE</strong></a>.
+  <a href="https://phoenix-protocol-fi.vercel.app"><strong>Phoenix Protocol</strong></a> is proudly powered by <a href="https://chain.link"><strong>Chainlink CRE</strong></a>.
 </p>
 
 <p align="center">
