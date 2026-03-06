@@ -1,4 +1,4 @@
-# 🔥 PHOENIX — On-Chain Structured Products, Fully Automated 🏛️
+# PHOENIX — On-Chain Structured Products, Fully Automated 🏛️
 
 > **Institutional-Grade. Trustless. Automated. Welcome to the future of structured products on-chain, powered by [Chainlink CRE](https://chain.link).**
 
@@ -112,9 +112,7 @@ Built as part of the [**Chainlink Convergence Hackathon**](https://chain.link/ha
 > _"Phoenix doesn't just bring structured products on-chain — it makes them automated, transparent, and accessible to everyone."_ 🔥
 
 <p align="center">
-  <a href="https://chain.link/hackathon"><img src="https://img.shields.io/badge/Chainlink-Convergence_Hackathon-375BD2?style=for-the-badge&logo=chainlink&logoColor=white" alt="Chainlink Convergence Hackathon" /></a>
   <img src="https://img.shields.io/badge/DeFi_&_Tokenization-Track-375BD2?style=for-the-badge" />
+  <a href="https://chain.link/hackathon"><img src="https://img.shields.io/badge/Chainlink-Convergence_Hackathon-375BD2?style=for-the-badge&logo=chainlink&logoColor=white" alt="Chainlink Convergence Hackathon" /></a>
   <img src="https://img.shields.io/badge/structured_products-on--chain-FF6B35?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/13_vaults-live-29AF7F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/47_tests-passing-29AF7F?style=for-the-badge" />
 </p>
